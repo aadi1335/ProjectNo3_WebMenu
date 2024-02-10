@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+  <style>
+    /* Styles for menu container */
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Styles for individual food item */
+    .food-item {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    /* Styles for food image */
+    .food-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    /* Styles for food details */
+    .food-details {
+      padding: 10px;
+    }
+
+    /* Styles for food name */
+    .food-name {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    /* Styles for food description */
+    .food-description {
+      margin-bottom: 5px;
+    }
+
+    /* Styles for food price */
+    .food-price {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Styles for likes count */
+    .likes-count {
+      margin-top: 5px;
+    }
+
+    /* Styles for add to cart button */
+    .add-to-cart {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      align-self: flex-end;
+    }
+
+    /* Hover effect for add to cart button */
+    .add-to-cart:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu-container">
+  <!-- Food Item 1 -->
+  <div class="food-item">
+    <img class="food-image" src="food1.jpg" alt="Food 1">
+    <div class="food-details">
+      <div class="food-name">Food Name 1</div>
+      <div class="food-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="food-price">$10.99</div>
+      <div class="likes-count">Likes: 100</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Food Item 2 -->
+  <div class="food-item">
+    <img class="food-image" src="assets/1.jpeg" alt="Food 2">
+    <div class="food-details">
+      <div class="food-name">Food Name 2</div>
+      <div class="food-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div class="food-price">$12.99</div>
+      <div class="likes-count">Likes: 85</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Add more food items as needed -->
+</div>
+
+</body>
+</html>
